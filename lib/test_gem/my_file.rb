@@ -22,13 +22,13 @@ module TestGem
       #line
       #
     end
-    
+
     def self.last file_name
       #f = open(file_name, "a+")
       #f.readlines[-1].chop
       open(file_name, "a+").readlines[-1].chop
       #
-      File.open(filename) { |f| f.readlines[-1] }
+      File.open(file_name) { |f| f.readlines[-1].chop }
     end 
 
   end
